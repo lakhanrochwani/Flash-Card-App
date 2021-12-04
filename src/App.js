@@ -10,7 +10,12 @@ export default function App() {
     <div>
       <h1>Flash Cards</h1>
       {data.map((word) => (
-        <Card word={word.word} meaning={word.meaning} usage={word.usage} />
+        <Card
+          key={word.word}
+          word={word.word}
+          meaning={word.meaning}
+          usage={word.usage}
+        />
       ))}
     </div>
   );
